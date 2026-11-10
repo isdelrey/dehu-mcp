@@ -1,0 +1,29 @@
+[project]
+name = "dehu-mcp"
+version = "0.1.0"
+description = "MCP server + unattended sync for DEHú (Spanish government e-notifications), using a digital certificate (.p12)."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+keywords = ["mcp", "dehu", "notificaciones", "spain", "cl@ve", "certificado digital"]
+dependencies = [
+    "mcp>=1.2,<2",
+    "requests>=2.31",
+    "cryptography>=42",
+    "beautifulsoup4>=4.12",
+    "keyring>=24",
+    "pypdf>=4",
+]
+
+[project.scripts]
+dehu-mcp = "dehu_mcp.cli:main"
+
+[project.urls]
+Repository = "https://github.com/isdelrey/dehu-mcp"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dehu_mcp"]

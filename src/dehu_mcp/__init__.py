@@ -1,0 +1,5 @@
+"""dehu-mcp: MCP server + unattended sync for DEHú (Spanish government e-notifications)."""
+APP_NAME = "dehu-mcp"
+ENV_PREFIX = "DEHU_MCP"
+DEFAULT_DOCS_DIRNAME = "DEHU"
+SOURCE = "dehu"

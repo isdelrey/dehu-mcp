@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.p12
+*.pfx
+*.pem
+*.key
+*.db
+.DS_Store
+dist/
